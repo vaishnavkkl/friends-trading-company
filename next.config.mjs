@@ -1,11 +1,10 @@
 /** @type {import('next').NextConfig} */
 const repoName = 'Friends_Trading_Co';
-const isGitHubPages = process.env.GITHUB_ACTIONS === 'true';
 
 const nextConfig = {
   output: 'export',
-  basePath: isGitHubPages ? `/${repoName}` : '',
-  assetPrefix: isGitHubPages ? `/${repoName}/` : '',
+  basePath: `/${repoName}`,
+  assetPrefix: `/${repoName}/`,
   trailingSlash: true,
   images: {
     unoptimized: true,
