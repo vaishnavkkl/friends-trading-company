@@ -1,0 +1,80 @@
+backend:
+  name: github
+  repo: vaishnavkkl/Friends_Trading_Co
+  branch: main
+  base_url: https://friends-trading-decap.vaishnavkkl25.workers.dev
+media_folder: public/images/uploads
+public_folder: /Friends_Trading_Co/images/uploads
+
+collections:
+  - name: catalog
+    label: Catalog
+    files:
+      - name: products
+        label: Products and Featured Deals
+        file: data/products.json
+        format: json
+        fields:
+          - label: Company
+            name: company
+            widget: object
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Location, name: location, widget: string }
+              - { label: WhatsApp Number, name: whatsappNumber, widget: string }
+              - { label: Instagram Handle, name: instagramHandle, widget: string, required: false }
+
+          - label: Categories
+            name: categories
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Slug, name: slug, widget: string }
+              - { label: Description, name: description, widget: text }
+              - { label: Image, name: image, widget: image }
+              - label: Types
+                name: types
+                widget: list
+                field: { label: Type, name: type, widget: string }
+              - label: Featured Items
+                name: featuredItems
+                widget: list
+                field: { label: Item, name: item, widget: string }
+
+          - label: Featured Products
+            name: featuredProducts
+            widget: list
+            summary: "{{fields.name}} - {{fields.price}}"
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Product Slug, name: productSlug, widget: string }
+              - { label: Brand, name: brand, widget: string }
+              - label: Category
+                name: category
+                widget: select
+                options: ["Mobiles", "Laptops", "Power Banks", "TWS & Headsets", "Accessories", "Services"]
+              - label: Category Slug
+                name: slug
+                widget: select
+                options: ["mobiles", "laptops", "power-banks", "tws-headsets", "accessories", "services"]
+              - { label: Condition, name: condition, widget: string }
+              - { label: Price, name: price, widget: string }
+              - { label: Original Price, name: originalPrice, widget: string, required: false }
+              - { label: Image, name: image, widget: image }
+              - { label: Summary, name: summary, widget: text }
+              - label: Details
+                name: details
+                widget: list
+                field: { label: Detail, name: detail, widget: string }
+              - { label: Source Name, name: sourceName, widget: string, required: false }
+              - { label: Source URL, name: sourceUrl, widget: string, required: false }
+
+          - label: Brand Offers
+            name: brandOffers
+            widget: list
+            summary: "{{fields.name}} - {{fields.offer}}"
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Category, name: category, widget: string }
+              - { label: Offer, name: offer, widget: string }
