@@ -1,0 +1,46 @@
+<svg width="980" height="720" viewBox="0 0 980 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="980" height="720" rx="48" fill="#070A10"/>
+  <circle cx="492" cy="234" r="302" fill="url(#heroGlow)" opacity=".58"/>
+  <path d="M160 540C282 468 737 462 848 540" stroke="url(#floor)" stroke-width="2"/>
+  <rect x="248" y="154" width="430" height="292" rx="24" fill="#0D1420" stroke="#66E9FF" stroke-opacity=".25" stroke-width="3"/>
+  <rect x="271" y="181" width="384" height="238" rx="15" fill="#0A0F18"/>
+  <path d="M292 386L397 292L461 339L530 267L633 386H292Z" fill="url(#screenGrad)"/>
+  <circle cx="587" cy="229" r="24" fill="#22E5FF"/>
+  <path d="M418 446H508L525 511H400L418 446Z" fill="#111B29"/>
+  <rect x="357" y="508" width="214" height="18" rx="9" fill="#253348"/>
+  <rect x="674" y="226" width="123" height="244" rx="31" fill="#101827" stroke="#79F3FF" stroke-opacity=".55" stroke-width="3"/>
+  <rect x="690" y="251" width="91" height="186" rx="20" fill="#080C13"/>
+  <path d="M702 395C725 357 752 329 777 306V421H702V395Z" fill="url(#phoneGrad)"/>
+  <circle cx="735" cy="448" r="5" fill="#7AF3FF"/>
+  <rect x="139" y="277" width="150" height="250" rx="34" fill="#111827" stroke="#3EA6FF" stroke-opacity=".55" stroke-width="3"/>
+  <rect x="158" y="309" width="112" height="174" rx="22" fill="#080C13"/>
+  <path d="M170 458C199 400 231 369 269 339V483H170V458Z" fill="url(#phoneGrad2)"/>
+  <rect x="190" y="293" width="48" height="6" rx="3" fill="#293A55"/>
+  <rect x="612" y="505" width="173" height="70" rx="24" fill="#0E1623" stroke="#77F3FF" stroke-opacity=".28" stroke-width="2"/>
+  <rect x="642" y="526" width="76" height="14" rx="7" fill="#23334B"/>
+  <circle cx="744" cy="540" r="16" fill="#22E5FF"/>
+  <defs>
+    <radialGradient id="heroGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(492 234) rotate(90) scale(302)">
+      <stop stop-color="#22E5FF" stop-opacity=".75"/>
+      <stop offset=".47" stop-color="#247CFF" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="screenGrad" x1="292" y1="267" x2="633" y2="386" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#20E6FF"/>
+      <stop offset="1" stop-color="#247CFF"/>
+    </linearGradient>
+    <linearGradient id="phoneGrad" x1="702" y1="306" x2="777" y2="421" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#26F2FF"/>
+      <stop offset="1" stop-color="#245BFF"/>
+    </linearGradient>
+    <linearGradient id="phoneGrad2" x1="170" y1="339" x2="269" y2="483" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5FFFFF"/>
+      <stop offset="1" stop-color="#2878FF"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="160" y1="540" x2="848" y2="540" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#20E6FF" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#20E6FF" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#20E6FF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>

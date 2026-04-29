@@ -1,0 +1,9 @@
+<svg width="420" height="320" viewBox="0 0 420 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="210" cy="274" rx="150" ry="18" fill="#20E6FF" opacity=".12"/>
+  <rect x="76" y="52" width="268" height="166" rx="19" fill="#101827" stroke="#7AF3FF" stroke-width="5"/>
+  <rect x="95" y="72" width="230" height="126" rx="11" fill="#07101B"/>
+  <path d="M107 190L174 126L216 160L267 107L316 190H107Z" fill="url(#g)"/>
+  <path d="M44 231H376L396 265H24L44 231Z" fill="#172338"/>
+  <rect x="168" y="239" width="84" height="8" rx="4" fill="#334A66"/>
+  <defs><linearGradient id="g" x1="107" y1="107" x2="316" y2="190"><stop stop-color="#20E6FF"/><stop offset="1" stop-color="#247CFF"/></linearGradient></defs>
+</svg>

@@ -1,0 +1,129 @@
+ ⨯ Error: Page "/[slug]/page" is missing exported function "generateStaticParams()", which is required with "output: export" config.
+    at DevServer.renderToResponseWithComponentsImpl (D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\base-server.js:1079:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async DevServer.renderPageComponent (D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\base-server.js:818:17)
+    at async D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (D:\Projects\Friends_Trading_Co\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  page: '/mobiles'
+}
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: invalid block type
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: invalid block type
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'D:\Projects\Friends_Trading_Co\.next\server\vendor-chunks'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/motion-utils' in D:\Projects\Friends_Trading_Co\.next\server for build dependencies doesn't lead to expected result 'D:\Projects\Friends_Trading_Co\.next\server\vendor-chunks\motion-utils.js', but to 'Error: Can't resolve './vendor-chunks/motion-utils' in 'D:\Projects\Friends_Trading_Co\.next\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/motion-utils (expected D:\Projects\Friends_Trading_Co\.next\server\vendor-chunks\motion-utils.js)
+<w>  at file dependencies D:\Projects\Friends_Trading_Co\.next\server\webpack-runtime.js
+<w>  at file D:\Projects\Friends_Trading_Co\.next\server\webpack-runtime.js
+<w>  at file dependencies D:\Projects\Friends_Trading_Co\.next\server\app\mobiles\page.js
+<w>  at file D:\Projects\Friends_Trading_Co\.next\server\app\mobiles\page.js
+<w>  at file dependencies D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\require.js
+<w>  at file D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\require.js
+<w>  at file dependencies D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\load-components.js
+<w>  at file D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies D:\Projects\Friends_Trading_Co\node_modules\next\dist\build\utils.js
+<w>  at file D:\Projects\Friends_Trading_Co\node_modules\next\dist\build\utils.js
+<w>  at file dependencies D:\Projects\Friends_Trading_Co\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file D:\Projects\Friends_Trading_Co\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs D:\Projects\Friends_Trading_Co\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/lucide-react' in D:\Projects\Friends_Trading_Co\.next\server for build dependencies doesn't lead to expected result 'D:\Projects\Friends_Trading_Co\.next\server\vendor-chunks\lucide-react.js', but to 'Error: Can't resolve './vendor-chunks/lucide-react' in 'D:\Projects\Friends_Trading_Co\.next\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/lucide-react (expected D:\Projects\Friends_Trading_Co\.next\server\vendor-chunks\lucide-react.js)
+<w>  at file dependencies D:\Projects\Friends_Trading_Co\.next\server\webpack-runtime.js
+<w>  at file D:\Projects\Friends_Trading_Co\.next\server\webpack-runtime.js
+<w>  at file dependencies D:\Projects\Friends_Trading_Co\.next\server\app\mobiles\page.js
+<w>  at file D:\Projects\Friends_Trading_Co\.next\server\app\mobiles\page.js
+<w>  at file dependencies D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\require.js
+<w>  at file D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\require.js
+<w>  at file dependencies D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\load-components.js
+<w>  at file D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies D:\Projects\Friends_Trading_Co\node_modules\next\dist\build\utils.js
+<w>  at file D:\Projects\Friends_Trading_Co\node_modules\next\dist\build\utils.js
+<w>  at file dependencies D:\Projects\Friends_Trading_Co\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file D:\Projects\Friends_Trading_Co\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs D:\Projects\Friends_Trading_Co\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving './vendor-chunks/motion-dom' in D:\Projects\Friends_Trading_Co\.next\server for build dependencies doesn't lead to expected result 'D:\Projects\Friends_Trading_Co\.next\server\vendor-chunks\motion-dom.js', but to 'Error: Can't resolve './vendor-chunks/motion-dom' in 'D:\Projects\Friends_Trading_Co\.next\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ./vendor-chunks/motion-dom (expected D:\Projects\Friends_Trading_Co\.next\server\vendor-chunks\motion-dom.js)
+<w>  at file dependencies D:\Projects\Friends_Trading_Co\.next\server\webpack-runtime.js
+<w>  at file D:\Projects\Friends_Trading_Co\.next\server\webpack-runtime.js
+<w>  at file dependencies D:\Projects\Friends_Trading_Co\.next\server\app\mobiles\page.js
+<w>  at file D:\Projects\Friends_Trading_Co\.next\server\app\mobiles\page.js
+<w>  at file dependencies D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\require.js
+<w>  at file D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\require.js
+<w>  at file dependencies D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\load-components.js
+<w>  at file D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies D:\Projects\Friends_Trading_Co\node_modules\next\dist\build\utils.js
+<w>  at file D:\Projects\Friends_Trading_Co\node_modules\next\dist\build\utils.js
+<w>  at file dependencies D:\Projects\Friends_Trading_Co\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file D:\Projects\Friends_Trading_Co\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs D:\Projects\Friends_Trading_Co\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+ ⨯ Error: Cannot find module 'D:\Projects\Friends_Trading_Co\.next\server\app\accessories\page.js'
+Require stack:
+- D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\require.js
+- D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\load-components.js
+- D:\Projects\Friends_Trading_Co\node_modules\next\dist\build\utils.js
+- D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\dev\hot-middleware.js
+- D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\dev\hot-reloader-webpack.js
+- D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\lib\router-utils\setup-dev-bundler.js
+- D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\lib\router-server.js
+- D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\lib\start-server.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1420:15)
+    at D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)
+    at Module._load (node:internal/modules/cjs/loader:1226:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:328:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+    at mod.require (D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16)
+    at requirePage (D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\require.js:109:84)
+    at D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\load-components.js:103:84
+    at async loadComponentsImpl (D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\load-components.js:103:26)
+    at async DevServer.findPageComponentsImpl (D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\next-server.js:714:36)
+    at async DevServer.findPageComponents (D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\dev\next-dev-server.js:577:20)
+    at async DevServer.renderPageComponent (D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\base-server.js:1910:24)
+    at async DevServer.renderToResponseImpl (D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\base-server.js:1962:32)
+    at async DevServer.pipeImpl (D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\base-server.js:922:25)
+    at async NextNodeServer.handleCatchallRenderRequest (D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\base-server.js:818:17)
+    at async D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (D:\Projects\Friends_Trading_Co\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\lib\router-server.js:179:21)
+    at async handleRequest (D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\lib\router-server.js:359:24)
+    at async requestHandlerImpl (D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\lib\router-server.js:383:13)
+    at async Server.requestListener (D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\lib\start-server.js:141:13) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\Projects\\Friends_Trading_Co\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\Projects\\Friends_Trading_Co\\node_modules\\next\\dist\\server\\load-components.js',
+    'D:\\Projects\\Friends_Trading_Co\\node_modules\\next\\dist\\build\\utils.js',
+    'D:\\Projects\\Friends_Trading_Co\\node_modules\\next\\dist\\server\\dev\\hot-middleware.js',
+    'D:\\Projects\\Friends_Trading_Co\\node_modules\\next\\dist\\server\\dev\\hot-reloader-webpack.js',
+    'D:\\Projects\\Friends_Trading_Co\\node_modules\\next\\dist\\server\\lib\\router-utils\\setup-dev-bundler.js',
+    'D:\\Projects\\Friends_Trading_Co\\node_modules\\next\\dist\\server\\lib\\router-server.js',
+    'D:\\Projects\\Friends_Trading_Co\\node_modules\\next\\dist\\server\\lib\\start-server.js'
+  ],
+  page: '/accessories'
+}
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: invalid block type
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, lstat 'D:\Projects\Friends_Trading_Co\.next\server\app\mobiles\page.js'
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../../.next/server/app/mobiles/page' in D:\Projects\Friends_Trading_Co\node_modules\next\dist\server for build dependencies doesn't lead to expected result 'D:\Projects\Friends_Trading_Co\.next\server\app\mobiles\page.js', but to 'Error: Can't resolve '../../../../.next/server/app/mobiles/page' in 'D:\Projects\Friends_Trading_Co\node_modules\next\dist\server'' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../../.next/server/app/mobiles/page (expected D:\Projects\Friends_Trading_Co\.next\server\app\mobiles\page.js)
+<w>  at file dependencies D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\require.js
+<w>  at file D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\require.js
+<w>  at file dependencies D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\load-components.js
+<w>  at file D:\Projects\Friends_Trading_Co\node_modules\next\dist\server\load-components.js
+<w>  at file dependencies D:\Projects\Friends_Trading_Co\node_modules\next\dist\build\utils.js
+<w>  at file D:\Projects\Friends_Trading_Co\node_modules\next\dist\build\utils.js
+<w>  at file dependencies D:\Projects\Friends_Trading_Co\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at file D:\Projects\Friends_Trading_Co\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+<w>  at resolve commonjs D:\Projects\Friends_Trading_Co\node_modules\next\dist\build\webpack\loaders\next-route-loader\index.js
+ ⚠ Found a change in next.config.mjs. Restarting the server to apply the changes...
