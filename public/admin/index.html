@@ -1,49 +1,95 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Friends Trading CMS</title>
-    <!-- Link to config -->
-    <link href="config.yml" type="text/yaml" rel="cms-config-url">
-  </head>
-  <body>
-    <script>
-      const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-      const repoName = 'friends-trading-company';
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Friends Trading CMS</title>
+</head>
+<body>
+  <!-- Decap CMS -->
+  <script src="https://unpkg.com/decap-cms@^3.1.0/dist/decap-cms.js"></script>
+  
+  <script>
+    const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    const repoName = 'friends-trading-company';
 
-      // Manual Listener Fail-safe
-      window.addEventListener('message', (event) => {
-        // Look for the success message
-        if (event.data && (typeof event.data === 'string' && event.data.includes('success'))) {
-          try {
-            const data = typeof event.data === 'string' 
-              ? JSON.parse(event.data.split('success:')[1]) 
-              : event.data;
-
-            if (data.token) {
-              // Manually save the user to memory
-              const user = {
-                backendName: 'github',
-                token: data.token,
-                provider: 'github'
-              };
-              localStorage.setItem('decap-cms-user', JSON.stringify(user));
-              
-              // Force refresh to enter the CMS
-              window.location.reload();
-            }
-          } catch (e) {
-            console.error('Manual login catch failed:', e);
-          }
-        }
-      }, false);
-
-      window.CMS_CONFIG = {
+    // Initialize CMS with full configuration
+    CMS.init({
+      config: {
         local_backend: isLocal,
-        public_folder: isLocal ? '/images/uploads' : `/${repoName}/images/uploads`
-      };
-    </script>
-    <script src="https://unpkg.com/decap-cms@^3.1.0/dist/decap-cms.js"></script>
-  </body>
+        backend: {
+          name: 'github',
+          repo: 'vaishnavkkl/friends-trading-company',
+          branch: 'main',
+          base_url: 'https://friends-trading-decap.vaishnavkkl25.workers.dev/',
+        },
+        site_url: 'https://vaishnavkkl.github.io/friends-trading-company',
+        display_url: 'https://vaishnavkkl.github.io/friends-trading-company',
+        media_folder: 'public/images/uploads',
+        public_folder: isLocal ? '/images/uploads' : `/${repoName}/images/uploads`,
+        collections: [
+          {
+            name: 'catalog',
+            label: 'Product Catalog',
+            files: [
+              {
+                label: 'Products',
+                name: 'products',
+                file: 'data/products.json',
+                fields: [
+                  {
+                    label: 'Categories',
+                    name: 'categories',
+                    widget: 'list',
+                    fields: [
+                      { label: 'Name', name: 'name', widget: 'string' },
+                      { label: 'Slug', name: 'slug', widget: 'string' },
+                      { label: 'Description', name: 'description', widget: 'text' },
+                      { label: 'Image URL', name: 'image', widget: 'image' },
+                      { label: 'Featured Items', name: 'featuredItems', widget: 'list' }
+                    ]
+                  },
+                  {
+                    label: 'Products',
+                    name: 'products',
+                    widget: 'list',
+                    fields: [
+                      { label: 'ID', name: 'id', widget: 'string' },
+                      { label: 'Name', name: 'name', widget: 'string' },
+                      { label: 'Price', name: 'price', widget: 'string' },
+                      { label: 'Image', name: 'image', widget: 'image' },
+                      { label: 'Category', name: 'category', widget: 'string' },
+                      { label: 'Rating', name: 'rating', widget: 'number', value_type: 'float' },
+                      { label: 'Reviews', name: 'reviews', widget: 'number' },
+                      { label: 'In Stock', name: 'inStock', widget: 'boolean' },
+                      { label: 'Featured', name: 'isFeatured', widget: 'boolean' },
+                      { label: 'Description', name: 'description', widget: 'text' }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    });
+
+    // FAIL-SAFE LOGIN HANDLER
+    window.addEventListener('message', (event) => {
+      if (event.data && (typeof event.data === 'string' && event.data.includes('success'))) {
+        try {
+          const data = typeof event.data === 'string' ? JSON.parse(event.data.split('success:')[1]) : event.data;
+          if (data.token) {
+            localStorage.setItem('decap-cms-user', JSON.stringify({
+              backendName: 'github',
+              token: data.token,
+              provider: 'github'
+            }));
+            window.location.reload();
+          }
+        } catch (e) { console.error(e); }
+      }
+    }, false);
+  </script>
+</body>
 </html>
