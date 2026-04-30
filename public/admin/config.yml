@@ -3,7 +3,7 @@ backend:
   name: github
   repo: vaishnavkkl/friends-trading-company
   branch: main
-  base_url: https://friends-trading-decap.vaishnavkkl25.workers.dev
+  base_url: https://friends-trading-decap.vaishnavkkl25.workers.dev/
 site_url: https://vaishnavkkl.github.io/friends-trading-company
 display_url: https://vaishnavkkl.github.io/friends-trading-company
 media_folder: public/images/uploads
