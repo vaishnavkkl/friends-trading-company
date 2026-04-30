@@ -3,8 +3,12 @@ import { useEffect } from 'react';
 
 export default function AdminRedirect() {
   useEffect(() => {
-    // Redirect to the static index.html file which Decap CMS uses
-    window.location.href = '/admin/index.html';
+    // Check if we are on GitHub Pages (it will have /friends-trading-company/ in the URL)
+    const isGitHubPages = window.location.hostname.includes('github.io');
+    const basePath = isGitHubPages ? '/friends-trading-company' : '';
+    
+    // Redirect to the correct path
+    window.location.href = `${basePath}/admin/index.html`;
   }, []);
 
   return (
