@@ -4,8 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Friends Trading CMS</title>
+    <!-- Handle GitHub Pages sub-directory routing -->
+    <script>
+      if (window.location.pathname.endsWith('/admin')) {
+        window.history.replaceState(null, '', window.location.pathname + '/');
+      }
+    </script>
   </head>
   <body>
+    <!-- Decap CMS loading -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   </body>
 </html>

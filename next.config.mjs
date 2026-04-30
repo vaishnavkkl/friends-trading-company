@@ -8,7 +8,7 @@ const nextConfig = {
   // But in local development, we want it at /
   basePath: isProd ? `/${repoName}` : '',
   assetPrefix: isProd ? `/${repoName}/` : '',
-  trailingSlash: true,
+  trailingSlash: isProd ? true : false,
   images: {
     unoptimized: true,
     remotePatterns: [
