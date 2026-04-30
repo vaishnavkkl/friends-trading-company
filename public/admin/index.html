@@ -7,17 +7,17 @@
 </head>
 <body>
   <script>
-    // Prevent Decap from loading config.yml automatically
+    // 1. Tell Decap we will provide the config manually
     window.CMS_MANUAL_INIT = true;
   </script>
-  <!-- Decap CMS -->
+  
   <script src="https://unpkg.com/decap-cms@^3.1.0/dist/decap-cms.js"></script>
   
   <script>
     const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
     const repoName = 'friends-trading-company';
 
-    // Initialize CMS with full configuration
+    // 2. Initialize with the dynamic config
     CMS.init({
       config: {
         local_backend: isLocal,
@@ -38,7 +38,7 @@
             files: [
               {
                 label: 'Products',
-                name: 'products',
+                name: 'products_data', // Changed internal name to avoid any collision
                 file: 'data/products.json',
                 fields: [
                   {
@@ -78,7 +78,7 @@
       }
     });
 
-    // FAIL-SAFE LOGIN HANDLER
+    // 3. Fail-safe login handler
     window.addEventListener('message', (event) => {
       if (event.data && (typeof event.data === 'string' && event.data.includes('success'))) {
         try {
