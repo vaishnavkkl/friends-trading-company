@@ -9,10 +9,36 @@
   </head>
   <body>
     <script>
-      // Automatically handle paths for Local vs GitHub Pages
       const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
       const repoName = 'friends-trading-company';
-      
+
+      // Manual Listener Fail-safe
+      window.addEventListener('message', (event) => {
+        // Look for the success message
+        if (event.data && (typeof event.data === 'string' && event.data.includes('success'))) {
+          try {
+            const data = typeof event.data === 'string' 
+              ? JSON.parse(event.data.split('success:')[1]) 
+              : event.data;
+
+            if (data.token) {
+              // Manually save the user to memory
+              const user = {
+                backendName: 'github',
+                token: data.token,
+                provider: 'github'
+              };
+              localStorage.setItem('decap-cms-user', JSON.stringify(user));
+              
+              // Force refresh to enter the CMS
+              window.location.reload();
+            }
+          } catch (e) {
+            console.error('Manual login catch failed:', e);
+          }
+        }
+      }, false);
+
       window.CMS_CONFIG = {
         local_backend: isLocal,
         public_folder: isLocal ? '/images/uploads' : `/${repoName}/images/uploads`
