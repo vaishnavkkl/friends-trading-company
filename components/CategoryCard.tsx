@@ -101,7 +101,7 @@ function CategoryVisual({ slug }: { slug: string }) {
 
 export function CategoryCard({ category }: { category: Category }) {
   return (
-    <div className="scroll-reveal reveal-card group h-full transition duration-300 hover:-translate-y-2 hover:scale-[1.02] active:scale-[0.99]">
+    <div className="reveal-card group h-full transition duration-300 hover:-translate-y-2 hover:scale-[1.02] active:scale-[0.99]">
       <Link
         href={`/${category.slug}`}
         prefetch

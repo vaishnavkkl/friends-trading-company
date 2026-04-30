@@ -1,10 +1,13 @@
 /** @type {import('next').NextConfig} */
 const repoName = 'friends-trading-company';
+const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
   output: 'export',
-  basePath: `/${repoName}`,
-  assetPrefix: `/${repoName}/`,
+  // On GitHub Pages, the site is hosted at /repo-name/
+  // But in local development, we want it at /
+  basePath: isProd ? `/${repoName}` : '',
+  assetPrefix: isProd ? `/${repoName}/` : '',
   trailingSlash: true,
   images: {
     unoptimized: true,

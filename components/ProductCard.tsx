@@ -8,7 +8,7 @@ export function ProductCard({ product }: { product: Product }) {
 
   return (
     <article
-      className="glass product-card scroll-reveal reveal-card group relative flex h-full min-h-[31rem] overflow-hidden rounded-[2rem] p-5 transition duration-300 hover:border-cyan-200/45 hover:shadow-glow"
+      className="glass product-card reveal-card group relative flex h-full min-h-[31rem] overflow-hidden rounded-[2rem] p-5 transition duration-300 hover:border-cyan-200/45 hover:shadow-glow"
     >
       <div className="flex w-full flex-col">
         <div className="relative mb-6 grid aspect-[4/3] place-items-center overflow-hidden rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-white/[0.08] to-cyan-200/[0.03]">

@@ -162,9 +162,14 @@ html.light .cyber-grid {
 
 .reveal-ready .reveal-card {
   transform: translate3d(0, 26px, 0) scale(0.985);
+  transition:
+    transform 760ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 300ms ease,
+    box-shadow 300ms ease,
+    background-color 300ms ease;
 }
 
-.reveal-ready .reveal-card.is-visible {
+.reveal-ready .scroll-reveal.is-visible .reveal-card {
   transform: translate3d(0, 0, 0) scale(1);
 }
 
