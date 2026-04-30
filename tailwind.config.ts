@@ -34,15 +34,15 @@ const config: Config = {
           '50%': { transform: 'translateY(-14px)' }
         },
         marquee: {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-50%)' }
+          '0%': { transform: 'translate3d(0, 0, 0)' },
+          '100%': { transform: 'translate3d(-50%, 0, 0)' }
         }
       },
       animation: {
         'gradient-drift': 'gradientDrift 18s ease-in-out infinite',
         'soft-pulse': 'softPulse 3.8s ease-in-out infinite',
         'float-slow': 'floatSlow 7s ease-in-out infinite',
-        marquee: 'marquee 34s linear infinite'
+        marquee: 'marquee 68s linear infinite'
       }
     }
   },

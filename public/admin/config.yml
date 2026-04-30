@@ -1,10 +1,10 @@
 backend:
   name: github
-  repo: vaishnavkkl/Friends_Trading_Co
+  repo: vaishnavkkl/friends-trading-company
   branch: main
   base_url: https://friends-trading-decap.vaishnavkkl25.workers.dev
 media_folder: public/images/uploads
-public_folder: /Friends_Trading_Co/images/uploads
+public_folder: /friends-trading-company/images/uploads
 
 collections:
   - name: catalog

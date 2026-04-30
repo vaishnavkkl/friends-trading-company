@@ -107,6 +107,21 @@ html.light .cyber-grid {
 
 .brand-ticker {
   background-color: rgba(0, 0, 0, 0.3);
+  contain: layout paint;
+  isolation: isolate;
+}
+
+.ticker-track {
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+
+.ticker-pill {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.045);
+  box-shadow: 0 0 14px rgba(32, 230, 255, 0.055);
+  transform: translate3d(0, 0, 0);
 }
 
 .ticker-edge {
