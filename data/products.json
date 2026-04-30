@@ -456,5 +456,19 @@
     "Laptop Repair",
     "Battery Replacement",
     "Software Installation"
+  ],
+  "products": [
+    {
+      "price": "12",
+      "name": "test",
+      "inStock": true,
+      "isFeatured": true,
+      "reviews": 3,
+      "id": "1",
+      "image": "/friends-trading-company/images/uploads/screenshot-0420-082339.png",
+      "description": "good",
+      "rating": 4,
+      "category": "tws"
+    }
   ]
 }
