@@ -11,251 +11,439 @@
       "slug": "mobiles",
       "description": "New and refurbished smartphones selected for strong value, clean condition, and daily reliability.",
       "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=75",
-      "types": ["New", "Refurbished", "Budget", "Premium"],
-      "featuredItems": ["iPhone 13 Pro", "Samsung Galaxy S23", "Redmi Note 13 Pro", "iPhone 11"]
+      "types": [
+        "New",
+        "Refurbished",
+        "Budget",
+        "Premium"
+      ],
+      "featuredItems": [
+        "iPhone 13 Pro",
+        "Samsung Galaxy S23",
+        "Redmi Note 13 Pro",
+        "iPhone 11"
+      ]
     },
     {
       "name": "Laptops",
       "slug": "laptops",
       "description": "Work-ready laptops for study, office, business use, and everyday performance.",
       "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=75",
-      "types": ["Business", "Student", "Refurbished", "Performance"],
-      "featuredItems": ["Dell Latitude 5420", "HP EliteBook 840 G7", "MacBook Air M1", "Lenovo ThinkPad T14"]
+      "types": [
+        "Business",
+        "Student",
+        "Refurbished",
+        "Performance"
+      ],
+      "featuredItems": [
+        "Dell Latitude 5420",
+        "HP EliteBook 840 G7",
+        "MacBook Air M1",
+        "Lenovo ThinkPad T14"
+      ]
     },
     {
       "name": "Power Banks",
       "slug": "power-banks",
       "description": "Compact backup power options for travel, shop floors, job sites, and long days outside.",
       "image": "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?auto=format&fit=crop&w=900&q=75",
-      "types": ["10,000 mAh", "20,000 mAh", "Fast Charging", "Compact"],
-      "featuredItems": ["Anker PowerCore 20K", "Baseus 30W Power Bank", "Xiaomi 10K Slim"]
+      "types": [
+        "10,000 mAh",
+        "20,000 mAh",
+        "Fast Charging",
+        "Compact"
+      ],
+      "featuredItems": [
+        "Anker PowerCore 20K",
+        "Baseus 30W Power Bank",
+        "Xiaomi 10K Slim"
+      ]
     },
     {
       "name": "TWS & Headsets",
       "slug": "tws-headsets",
       "description": "Wireless earbuds and headsets for calls, music, gaming, and hands-free work.",
       "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=75",
-      "types": ["TWS", "Neckband", "Gaming", "Noise Cancelling"],
-      "featuredItems": ["AirPods Pro 2", "Samsung Buds2 Pro", "JBL Tune 520BT"]
+      "types": [
+        "TWS",
+        "Neckband",
+        "Gaming",
+        "Noise Cancelling"
+      ],
+      "featuredItems": [
+        "AirPods Pro 2",
+        "Samsung Buds2 Pro",
+        "JBL Tune 520BT"
+      ]
     },
     {
       "name": "Accessories",
       "slug": "accessories",
       "description": "Daily essentials including chargers, cables, cases, protectors, adapters, and stands.",
       "image": "https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=900&q=75",
-      "types": ["Chargers", "Cables", "Cases", "Screen Guards"],
-      "featuredItems": ["USB-C 30W Charger", "MagSafe Case", "Tempered Glass Pack"]
+      "types": [
+        "Chargers",
+        "Cables",
+        "Cases",
+        "Screen Guards"
+      ],
+      "featuredItems": [
+        "USB-C 30W Charger",
+        "MagSafe Case",
+        "Tempered Glass Pack"
+      ]
     },
     {
       "name": "Services",
       "slug": "services",
       "description": "Reliable support for mobile and laptop repair, battery replacement, and software setup.",
       "image": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=75",
-      "types": ["Mobile Repair", "Laptop Repair", "Battery Replacement", "Software Installation"],
-      "featuredItems": ["iPhone Battery Replacement", "Laptop SSD Upgrade", "Windows Installation"]
+      "types": [
+        "Mobile Repair",
+        "Laptop Repair",
+        "Battery Replacement",
+        "Software Installation"
+      ],
+      "featuredItems": [
+        "iPhone Battery Replacement",
+        "Laptop SSD Upgrade",
+        "Windows Installation"
+      ]
     }
   ],
   "featuredProducts": [
     {
-      "name": "iPhone 13 Pro",
-      "productSlug": "iphone-13-pro",
-      "brand": "Apple",
-      "category": "Mobiles",
-      "slug": "mobiles",
-      "condition": "Refurbished",
-      "price": "From SAR 1,699",
-      "originalPrice": "Market SAR 1,899+",
-      "image": "https://images.pexels.com/photos/6751555/pexels-photo-6751555.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "details": [
+        "Triple-camera pro design",
+        "Quality checked body and display",
+        "Battery health shared before purchase",
+        "Best for premium daily use"
+      ],
+      "sourceName": "Pexels",
       "summary": "Premium iPhone with pro camera hardware, clean condition, and strong resale value.",
-      "details": ["Triple-camera pro design", "Quality checked body and display", "Battery health shared before purchase", "Best for premium daily use"],
-      "sourceName": "Pexels",
-      "sourceUrl": "https://www.pexels.com/photo/modern-smartphone-against-dark-background-6751554/"
+      "brand": "Apple",
+      "price": "From SAR 1,699",
+      "name": "iPhone 13 Pro",
+      "slug": "mobiles",
+      "sourceUrl": "https://www.pexels.com/photo/modern-smartphone-against-dark-background-6751554/",
+      "originalPrice": "Market SAR 1,899+",
+      "productSlug": "iphone-13-pro",
+      "condition": "Refurbished",
+      "image": "https://images.pexels.com/photos/6751555/pexels-photo-6751555.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "category": "Mobiles"
     },
     {
-      "name": "Samsung Galaxy S23",
-      "productSlug": "samsung-galaxy-s23",
-      "brand": "Samsung",
-      "category": "Mobiles",
-      "slug": "mobiles",
-      "condition": "New / Open Box",
-      "price": "From SAR 1,899",
-      "originalPrice": "Market SAR 2,150+",
-      "image": "https://images.unsplash.com/photo-1771324866975-3833195fd8ef?auto=format&fit=crop&w=1400&q=80",
+      "details": [
+        "Flagship-class Android performance",
+        "Compact premium body",
+        "Great option for camera and daily use",
+        "Stock changes frequently"
+      ],
+      "sourceName": "Unsplash",
       "summary": "Compact Android flagship option with clean display, strong cameras, and fast performance.",
-      "details": ["Flagship-class Android performance", "Compact premium body", "Great option for camera and daily use", "Stock changes frequently"],
-      "sourceName": "Unsplash",
-      "sourceUrl": "https://unsplash.com/photos/a-purple-smartphone-with-three-cameras-on-dark-background-aV7s_PAo5fA"
-    },
-    {
-      "name": "Redmi Note 13 Pro",
-      "productSlug": "redmi-note-13-pro",
-      "brand": "Xiaomi / Redmi",
-      "category": "Mobiles",
+      "brand": "Samsung",
+      "price": "From SAR 1,899",
+      "name": "Samsung Galaxy S23",
       "slug": "mobiles",
-      "condition": "New",
-      "price": "From SAR 699",
-      "originalPrice": "Market SAR 799+",
-      "image": "https://images.unsplash.com/photo-1760443728264-cb7bd1a83108?auto=format&fit=crop&w=1400&q=80",
+      "sourceUrl": "https://unsplash.com/photos/a-purple-smartphone-with-three-cameras-on-dark-background-aV7s_PAo5fA",
+      "originalPrice": "Market SAR 2,150+",
+      "productSlug": "samsung-galaxy-s23",
+      "condition": "New / Open Box",
+      "image": "https://images.unsplash.com/photo-1771324866975-3833195fd8ef?auto=format&fit=crop&w=1400&q=80",
+      "category": "Mobiles"
+    },
+    {
+      "details": [
+        "Popular value-brand choice",
+        "Good screen and battery value",
+        "Budget-friendly upgrade",
+        "Ask for RAM and storage variants"
+      ],
+      "sourceName": "Unsplash",
       "summary": "High-value smartphone with strong specs at budget-friendly pricing.",
-      "details": ["Popular value-brand choice", "Good screen and battery value", "Budget-friendly upgrade", "Ask for RAM and storage variants"],
-      "sourceName": "Unsplash",
-      "sourceUrl": "https://unsplash.com/photos/modern-smartphone-with-triple-camera-on-dark-background-0umK97_bFts"
+      "brand": "Xiaomi / Redmi",
+      "price": "From SAR 699",
+      "name": "Redmi Note 13 Pro",
+      "slug": "mobiles",
+      "sourceUrl": "https://unsplash.com/photos/modern-smartphone-with-triple-camera-on-dark-background-0umK97_bFts",
+      "originalPrice": "Market SAR 799+",
+      "productSlug": "redmi-note-13-pro",
+      "condition": "New",
+      "image": "https://images.unsplash.com/photo-1760443728264-cb7bd1a83108?auto=format&fit=crop&w=1400&q=80",
+      "category": "Mobiles"
     },
     {
-      "name": "Dell Latitude 5420",
-      "productSlug": "dell-latitude-5420",
-      "brand": "Dell",
-      "category": "Laptops",
-      "slug": "laptops",
-      "condition": "Refurbished",
-      "price": "From SAR 1,050",
-      "originalPrice": "Market SAR 1,250+",
-      "image": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1400&q=80",
+      "details": [
+        "Business-grade chassis",
+        "SSD options available",
+        "Good for office and study",
+        "Warranty options depend on stock"
+      ],
+      "sourceName": "Unsplash",
       "summary": "Reliable business laptop for office, study, and remote work.",
-      "details": ["Business-grade chassis", "SSD options available", "Good for office and study", "Warranty options depend on stock"],
-      "sourceName": "Unsplash",
-      "sourceUrl": "https://unsplash.com/s/photos/laptop-dark"
-    },
-    {
-      "name": "MacBook Air M1",
-      "productSlug": "macbook-air-m1",
-      "brand": "Apple",
-      "category": "Laptops",
+      "brand": "Dell",
+      "price": "From SAR 1,050",
+      "name": "Dell Latitude 5420",
       "slug": "laptops",
-      "condition": "Pre-owned",
-      "price": "From SAR 1,950",
-      "originalPrice": "Market SAR 2,250+",
-      "image": "https://images.pexels.com/photos/13073603/pexels-photo-13073603.jpeg?auto=compress&cs=tinysrgb&w=1400",
-      "summary": "Silent, lightweight laptop with excellent battery life and premium build.",
-      "details": ["Fanless Apple silicon laptop", "Long battery life", "Ideal for students and office work", "Condition confirmed before sale"],
-      "sourceName": "Pexels",
-      "sourceUrl": "https://www.pexels.com/photo/an-open-laptop-on-dark-background-13073603/"
-    },
-    {
-      "name": "Lenovo ThinkPad T14",
-      "productSlug": "lenovo-thinkpad-t14",
-      "brand": "Lenovo",
-      "category": "Laptops",
-      "slug": "laptops",
+      "sourceUrl": "https://unsplash.com/s/photos/laptop-dark",
+      "originalPrice": "Market SAR 1,250+",
+      "productSlug": "dell-latitude-5420",
       "condition": "Refurbished",
-      "price": "From SAR 1,150",
-      "originalPrice": "Market SAR 1,400+",
-      "image": "https://images.pexels.com/photos/2569997/pexels-photo-2569997.jpeg?auto=compress&cs=tinysrgb&w=1400",
-      "summary": "Durable business laptop from a popular global brand, made for practical work.",
-      "details": ["Business-focused keyboard and ports", "Good refurbished value", "Available specs vary by stock", "Recommended for work and training"],
-      "sourceName": "Pexels",
-      "sourceUrl": "https://www.pexels.com/photo/an-open-laptop-on-dark-background-13073603/"
+      "image": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1400&q=80",
+      "category": "Laptops"
     },
     {
-      "name": "Anker PowerCore 20K",
-      "productSlug": "anker-powercore-20k",
-      "brand": "Anker",
-      "category": "Power Banks",
-      "slug": "power-banks",
-      "condition": "New",
-      "price": "From SAR 149",
-      "originalPrice": "Market SAR 179+",
-      "image": "https://images.pexels.com/photos/30845149/pexels-photo-30845149.jpeg?auto=compress&cs=tinysrgb&w=1400",
-      "summary": "High-capacity charging for travel, work, and daily backup.",
-      "details": ["High capacity backup charging", "USB-C and USB-A options depend on model", "Good for travel and site work", "Ask for wattage and capacity"],
+      "details": [
+        "Fanless Apple silicon laptop",
+        "Long battery life",
+        "Ideal for students and office work",
+        "Condition confirmed before sale"
+      ],
       "sourceName": "Pexels",
-      "sourceUrl": "https://www.pexels.com/search/powerbank/"
-    },
-    {
-      "name": "Baseus 30W Power Bank",
-      "productSlug": "baseus-30w-power-bank",
-      "brand": "Baseus",
-      "category": "Power Banks",
-      "slug": "power-banks",
-      "condition": "New",
-      "price": "From SAR 119",
-      "originalPrice": "Market SAR 149+",
-      "image": "https://images.pexels.com/photos/11031423/pexels-photo-11031423.png?auto=compress&cs=tinysrgb&w=1400",
-      "summary": "Compact fast charging power bank for daily carry.",
-      "details": ["Popular accessory brand", "Fast charging options", "Slim daily-carry design", "Capacity confirmed on WhatsApp"],
-      "sourceName": "Pexels",
-      "sourceUrl": "https://www.pexels.com/search/powerbank/"
-    },
-    {
-      "name": "AirPods Pro 2",
-      "productSlug": "airpods-pro-2",
+      "summary": "Silent, lightweight laptop with excellent battery life and premium build.",
       "brand": "Apple",
-      "category": "TWS & Headsets",
-      "slug": "tws-headsets",
+      "price": "From SAR 1,950",
+      "name": "MacBook Air M1",
+      "slug": "laptops",
+      "sourceUrl": "https://www.pexels.com/photo/an-open-laptop-on-dark-background-13073603/",
+      "originalPrice": "Market SAR 2,250+",
+      "productSlug": "macbook-air-m1",
+      "condition": "Pre-owned",
+      "image": "https://images.pexels.com/photos/13073603/pexels-photo-13073603.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "category": "Laptops"
+    },
+    {
+      "details": [
+        "Business-focused keyboard and ports",
+        "Good refurbished value",
+        "Available specs vary by stock",
+        "Recommended for work and training"
+      ],
+      "sourceName": "Pexels",
+      "summary": "Durable business laptop from a popular global brand, made for practical work.",
+      "brand": "Lenovo",
+      "price": "From SAR 1,150",
+      "name": "Lenovo ThinkPad T14",
+      "slug": "laptops",
+      "sourceUrl": "https://www.pexels.com/photo/an-open-laptop-on-dark-background-13073603/",
+      "originalPrice": "Market SAR 1,400+",
+      "productSlug": "lenovo-thinkpad-t14",
+      "condition": "Refurbished",
+      "image": "https://images.pexels.com/photos/2569997/pexels-photo-2569997.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "category": "Laptops"
+    },
+    {
+      "details": [
+        "High capacity backup charging",
+        "USB-C and USB-A options depend on model",
+        "Good for travel and site work",
+        "Ask for wattage and capacity"
+      ],
+      "sourceName": "Pexels",
+      "summary": "High-capacity charging for travel, work, and daily backup.",
+      "brand": "Anker",
+      "price": "From SAR 149",
+      "name": "Anker PowerCore 20K",
+      "slug": "power-banks",
+      "sourceUrl": "https://www.pexels.com/search/powerbank/",
+      "originalPrice": "Market SAR 179+",
+      "productSlug": "anker-powercore-20k",
       "condition": "New",
-      "price": "Ask for best price",
-      "originalPrice": "Limited stock",
-      "image": "https://images.unsplash.com/photo-1770292170233-5d9e235ec739?auto=format&fit=crop&w=1400&q=80",
+      "image": "https://images.pexels.com/photos/30845149/pexels-photo-30845149.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "category": "Power Banks"
+    },
+    {
+      "details": [
+        "Popular accessory brand",
+        "Fast charging options",
+        "Slim daily-carry design",
+        "Capacity confirmed on WhatsApp"
+      ],
+      "sourceName": "Pexels",
+      "summary": "Compact fast charging power bank for daily carry.",
+      "brand": "Baseus",
+      "price": "From SAR 119",
+      "name": "Baseus 30W Power Bank",
+      "slug": "power-banks",
+      "sourceUrl": "https://www.pexels.com/search/powerbank/",
+      "originalPrice": "Market SAR 149+",
+      "productSlug": "baseus-30w-power-bank",
+      "condition": "New",
+      "image": "https://images.pexels.com/photos/11031423/pexels-photo-11031423.png?auto=compress&cs=tinysrgb&w=1400",
+      "category": "Power Banks"
+    },
+    {
+      "details": [
+        "Premium TWS category",
+        "Compact charging case",
+        "Good for calls and music",
+        "Availability changes quickly"
+      ],
+      "sourceName": "Unsplash",
       "summary": "Premium wireless audio with compact case and noise-cancelling style.",
-      "details": ["Premium TWS category", "Compact charging case", "Good for calls and music", "Availability changes quickly"],
-      "sourceName": "Unsplash",
-      "sourceUrl": "https://unsplash.com/photos/white-wireless-earbuds-and-charging-case-on-dark-background-rN1hLIGV4gE"
-    },
-    {
-      "name": "JBL Tune 520BT",
-      "productSlug": "jbl-tune-520bt",
-      "brand": "JBL",
-      "category": "TWS & Headsets",
+      "brand": "Apple",
+      "price": "Ask for best price",
+      "name": "AirPods Pro 3",
       "slug": "tws-headsets",
+      "sourceUrl": "https://unsplash.com/photos/white-wireless-earbuds-and-charging-case-on-dark-background-rN1hLIGV4gE",
+      "originalPrice": "Limited stock",
+      "productSlug": "airpods-pro-2",
       "condition": "New",
-      "price": "From SAR 129",
-      "originalPrice": "Market SAR 159+",
-      "image": "https://images.unsplash.com/photo-1600086827875-a63b01f1335c?auto=format&fit=crop&w=1400&q=80",
-      "summary": "Wireless over-ear audio option for music, calls, and everyday listening.",
-      "details": ["Wireless headset category", "Comfortable daily listening", "Good gift option", "Color availability varies"],
+      "image": "https://images.unsplash.com/photo-1770292170233-5d9e235ec739?auto=format&fit=crop&w=1400&q=80",
+      "category": "TWS & Headsets"
+    },
+    {
+      "details": [
+        "Wireless headset category",
+        "Comfortable daily listening",
+        "Good gift option",
+        "Color availability varies"
+      ],
       "sourceName": "Unsplash",
-      "sourceUrl": "https://unsplash.com/photos/black-and-gray-headphones-on-black-surface-WKc_s4P4mQg"
+      "summary": "Wireless over-ear audio option for music, calls, and everyday listening.",
+      "brand": "JBL",
+      "price": "From SAR 129",
+      "name": "JBL Tune 520BT",
+      "slug": "tws-headsets",
+      "sourceUrl": "https://unsplash.com/photos/black-and-gray-headphones-on-black-surface-WKc_s4P4mQg",
+      "originalPrice": "Market SAR 159+",
+      "productSlug": "jbl-tune-520bt",
+      "condition": "New",
+      "image": "https://images.unsplash.com/photo-1600086827875-a63b01f1335c?auto=format&fit=crop&w=1400&q=80",
+      "category": "TWS & Headsets"
     },
     {
-      "name": "USB-C 30W Charger",
-      "productSlug": "usb-c-30w-charger",
-      "brand": "Baseus / Generic",
-      "category": "Accessories",
-      "slug": "accessories",
-      "condition": "New",
-      "price": "From SAR 39",
-      "originalPrice": "Market SAR 55+",
-      "image": "https://images.pexels.com/photos/14438774/pexels-photo-14438774.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "details": [
+        "USB-C fast charging category",
+        "Multiple wattage options",
+        "Phone and cable bundles available",
+        "Ask for compatible model"
+      ],
+      "sourceName": "Pexels",
       "summary": "Fast charging adapter options for modern USB-C phones and accessories.",
-      "details": ["USB-C fast charging category", "Multiple wattage options", "Phone and cable bundles available", "Ask for compatible model"],
-      "sourceName": "Pexels",
-      "sourceUrl": "https://www.pexels.com/photo/smartphones-and-charger-14438774/"
+      "brand": "Baseus / Generic",
+      "price": "From SAR 39",
+      "name": "USB-C 30W Charger",
+      "slug": "accessories",
+      "sourceUrl": "https://www.pexels.com/photo/smartphones-and-charger-14438774/",
+      "originalPrice": "Market SAR 55+",
+      "productSlug": "usb-c-30w-charger",
+      "condition": "New",
+      "image": "https://images.pexels.com/photos/14438774/pexels-photo-14438774.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "category": "Accessories"
     },
     {
-      "name": "Tempered Glass Pack",
-      "productSlug": "tempered-glass-pack",
-      "brand": "Multi Brand",
-      "category": "Accessories",
-      "slug": "accessories",
-      "condition": "New",
-      "price": "From SAR 15",
-      "originalPrice": "Bundle pricing",
-      "image": "https://images.pexels.com/photos/13429657/pexels-photo-13429657.jpeg?auto=compress&cs=tinysrgb&w=1400",
-      "summary": "Screen protection and fitting options for popular iPhone, Samsung, Redmi, Oppo, Vivo, and Realme models.",
-      "details": ["Budget protection option", "Installation support available", "Multiple phone models supported", "Bundle with case for better price"],
+      "details": [
+        "Budget protection option",
+        "Installation support available",
+        "Multiple phone models supported",
+        "Bundle with case for better price"
+      ],
       "sourceName": "Pexels",
-      "sourceUrl": "https://www.pexels.com/photo/photo-of-a-charging-phone-13429657/"
+      "summary": "Screen protection and fitting options for popular iPhone, Samsung, Redmi, Oppo, Vivo, and Realme models.",
+      "brand": "Multi Brand",
+      "price": "From SAR 15",
+      "name": "Tempered Glass Pack",
+      "slug": "accessories",
+      "sourceUrl": "https://www.pexels.com/photo/photo-of-a-charging-phone-13429657/",
+      "originalPrice": "Bundle pricing",
+      "productSlug": "tempered-glass-pack",
+      "condition": "New",
+      "image": "https://images.pexels.com/photos/13429657/pexels-photo-13429657.jpeg?auto=compress&cs=tinysrgb&w=1400",
+      "category": "Accessories"
     }
   ],
   "brandOffers": [
-    { "name": "Xiaomi", "category": "Mobiles", "offer": "Redmi deals from SAR 499" },
-    { "name": "Redmi", "category": "Mobiles", "offer": "Note series from SAR 699" },
-    { "name": "Oppo", "category": "Mobiles", "offer": "A-series from SAR 429" },
-    { "name": "Vivo", "category": "Mobiles", "offer": "Y-series from SAR 399" },
-    { "name": "Realme", "category": "Mobiles", "offer": "Budget phones from SAR 349" },
-    { "name": "Honor", "category": "Mobiles", "offer": "Smart deals from SAR 599" },
-    { "name": "Huawei", "category": "Mobiles", "offer": "Selected stock from SAR 549" },
-    { "name": "Infinix", "category": "Mobiles", "offer": "Hot series from SAR 329" },
-    { "name": "Tecno", "category": "Mobiles", "offer": "Spark series from SAR 299" },
-    { "name": "OnePlus", "category": "Mobiles", "offer": "Nord deals from SAR 899" },
-    { "name": "Lenovo", "category": "Laptops", "offer": "ThinkPad from SAR 1,150" },
-    { "name": "Baseus", "category": "Accessories", "offer": "Chargers from SAR 39" },
-    { "name": "Apple", "category": "Mobiles", "offer": "iPhone deals from SAR 899" },
-    { "name": "Samsung", "category": "Mobiles", "offer": "Galaxy deals from SAR 599" },
-    { "name": "Dell", "category": "Laptops", "offer": "Latitude from SAR 1,050" },
-    { "name": "HP", "category": "Laptops", "offer": "EliteBook from SAR 999" },
-    { "name": "JBL", "category": "Audio", "offer": "Headsets from SAR 129" },
-    { "name": "Anker", "category": "Power Banks", "offer": "Power banks from SAR 149" }
+    {
+      "name": "Xiaomi",
+      "category": "Mobiles",
+      "offer": "Redmi deals from SAR 499"
+    },
+    {
+      "name": "Redmi",
+      "category": "Mobiles",
+      "offer": "Note series from SAR 699"
+    },
+    {
+      "name": "Oppo",
+      "category": "Mobiles",
+      "offer": "A-series from SAR 429"
+    },
+    {
+      "name": "Vivo",
+      "category": "Mobiles",
+      "offer": "Y-series from SAR 399"
+    },
+    {
+      "name": "Realme",
+      "category": "Mobiles",
+      "offer": "Budget phones from SAR 349"
+    },
+    {
+      "name": "Honor",
+      "category": "Mobiles",
+      "offer": "Smart deals from SAR 599"
+    },
+    {
+      "name": "Huawei",
+      "category": "Mobiles",
+      "offer": "Selected stock from SAR 549"
+    },
+    {
+      "name": "Infinix",
+      "category": "Mobiles",
+      "offer": "Hot series from SAR 329"
+    },
+    {
+      "name": "Tecno",
+      "category": "Mobiles",
+      "offer": "Spark series from SAR 299"
+    },
+    {
+      "name": "OnePlus",
+      "category": "Mobiles",
+      "offer": "Nord deals from SAR 899"
+    },
+    {
+      "name": "Lenovo",
+      "category": "Laptops",
+      "offer": "ThinkPad from SAR 1,150"
+    },
+    {
+      "name": "Baseus",
+      "category": "Accessories",
+      "offer": "Chargers from SAR 39"
+    },
+    {
+      "name": "Apple",
+      "category": "Mobiles",
+      "offer": "iPhone deals from SAR 899"
+    },
+    {
+      "name": "Samsung",
+      "category": "Mobiles",
+      "offer": "Galaxy deals from SAR 599"
+    },
+    {
+      "name": "Dell",
+      "category": "Laptops",
+      "offer": "Latitude from SAR 1,050"
+    },
+    {
+      "name": "HP",
+      "category": "Laptops",
+      "offer": "EliteBook from SAR 999"
+    },
+    {
+      "name": "JBL",
+      "category": "Audio",
+      "offer": "Headsets from SAR 129"
+    },
+    {
+      "name": "Anker",
+      "category": "Power Banks",
+      "offer": "Power banks from SAR 149"
+    }
   ],
   "services": [
     "Mobile Repair",
