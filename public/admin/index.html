@@ -4,11 +4,20 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Friends Trading CMS</title>
-    <!-- Link directly to config -->
+    <!-- Link to config -->
     <link href="config.yml" type="text/yaml" rel="cms-config-url">
   </head>
   <body>
-    <!-- Use latest Decap CMS -->
+    <script>
+      // Automatically handle paths for Local vs GitHub Pages
+      const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+      const repoName = 'friends-trading-company';
+      
+      window.CMS_CONFIG = {
+        local_backend: isLocal,
+        public_folder: isLocal ? '/images/uploads' : `/${repoName}/images/uploads`
+      };
+    </script>
     <script src="https://unpkg.com/decap-cms@^3.1.0/dist/decap-cms.js"></script>
   </body>
 </html>

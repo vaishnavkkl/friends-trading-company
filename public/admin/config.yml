@@ -1,4 +1,3 @@
-local_backend: true
 backend:
   name: github
   repo: vaishnavkkl/friends-trading-company
@@ -7,7 +6,6 @@ backend:
 site_url: https://vaishnavkkl.github.io/friends-trading-company
 display_url: https://vaishnavkkl.github.io/friends-trading-company
 media_folder: public/images/uploads
-public_folder: /friends-trading-company/images/uploads
 
 collections:
   - name: catalog
