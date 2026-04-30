@@ -109,6 +109,12 @@
         "Laptop SSD Upgrade",
         "Windows Installation"
       ]
+    },
+    {
+      "name": "Test",
+      "slug": "test",
+      "description": "testing",
+      "image": "/friends-trading-company/images/uploads/screenshot-0420-082339.png"
     }
   ],
   "featuredProducts": [
