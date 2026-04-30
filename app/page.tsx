@@ -53,7 +53,7 @@ export default function HomePage() {
         className="pt-8"
       >
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-          {catalog.services.map((service) => (
+          {catalog.services?.map((service) => (
             <div key={service} className="glass rounded-[1.5rem] p-6 transition hover:border-cyan-200/40 hover:shadow-glow">
               <Wrench className="mb-8 text-cyan-200" size={26} />
               <h3 className="text-xl font-semibold text-white">{service}</h3>

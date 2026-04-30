@@ -120,7 +120,7 @@ export function CategoryCard({ category }: { category: Category }) {
           </div>
           <div className="mt-auto flex items-end justify-between gap-4">
             <div className="flex flex-wrap gap-2">
-              {category.types.slice(0, 3).map((type) => (
+              {category.types?.slice(0, 3).map((type) => (
                 <span key={type} className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-xs font-medium text-slate-300">
                   {type}
                 </span>

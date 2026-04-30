@@ -106,7 +106,7 @@ export default function ProductPage({ params }: ProductPageProps) {
 
       <SectionWrapper title="What to confirm before buying" className="pt-8">
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-          {product.details.map((detail) => (
+          {product.details?.map((detail) => (
             <div key={detail} className="rounded-[1.5rem] border border-white/10 bg-white/[0.04] p-6">
               <CheckCircle2 className="mb-8 text-cyan-200" size={24} />
               <p className="text-lg font-semibold leading-7 text-white">{detail}</p>

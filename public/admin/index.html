@@ -34,40 +34,97 @@
         collections: [
           {
             name: 'catalog',
-            label: 'Product Catalog',
+            label: 'Store Management',
             files: [
               {
-                label: 'Products',
-                name: 'products_data', // Changed internal name to avoid any collision
+                label: 'Featured Deals (Home Page)',
+                name: 'products_list',
                 file: 'data/products.json',
                 fields: [
                   {
-                    label: 'Categories',
-                    name: 'categories',
+                    label: 'Featured Products',
+                    name: 'featuredProducts',
                     widget: 'list',
+                    summary: '{{fields.name}} ({{fields.price}})',
                     fields: [
-                      { label: 'Name', name: 'name', widget: 'string' },
-                      { label: 'Slug', name: 'slug', widget: 'string' },
-                      { label: 'Description', name: 'description', widget: 'text' },
-                      { label: 'Image URL', name: 'image', widget: 'image' },
-                      { label: 'Featured Items', name: 'featuredItems', widget: 'list' }
-                    ]
-                  },
-                  {
-                    label: 'Products',
-                    name: 'products',
-                    widget: 'list',
-                    fields: [
-                      { label: 'ID', name: 'id', widget: 'string' },
-                      { label: 'Name', name: 'name', widget: 'string' },
-                      { label: 'Price', name: 'price', widget: 'string' },
-                      { label: 'Image', name: 'image', widget: 'image' },
-                      { label: 'Category', name: 'category', widget: 'string' },
-                      { label: 'Rating', name: 'rating', widget: 'number', value_type: 'float' },
-                      { label: 'Reviews', name: 'reviews', widget: 'number' },
-                      { label: 'In Stock', name: 'inStock', widget: 'boolean' },
-                      { label: 'Featured', name: 'isFeatured', widget: 'boolean' },
-                      { label: 'Description', name: 'description', widget: 'text' }
+                      { label: 'Product Name', name: 'name', widget: 'string', required: true },
+                      { 
+                        label: 'Auto ID / Slug', 
+                        name: 'productSlug', 
+                        widget: 'slug', 
+                        fromField: 'name',
+                        required: true,
+                        hint: 'Lower-case letters, numbers and hyphens only. Auto-generated from name.'
+                      },
+                      { label: 'Brand', name: 'brand', widget: 'string', required: true },
+                      { 
+                        label: 'Category Name', 
+                        name: 'category', 
+                        widget: 'select',
+                        required: true,
+                        options: [
+                          'Mobiles', 
+                          'Laptops', 
+                          'Power Banks', 
+                          'TWS & Headsets', 
+                          'Accessories', 
+                          'Services'
+                        ]
+                      },
+                      { 
+                        label: 'Category Slug (Internal)', 
+                        name: 'slug', 
+                        widget: 'select',
+                        required: true,
+                        options: [
+                          { label: 'mobiles', value: 'mobiles' },
+                          { label: 'laptops', value: 'laptops' },
+                          { label: 'power-banks', value: 'power-banks' },
+                          { label: 'tws-headsets', value: 'tws-headsets' },
+                          { label: 'accessories', value: 'accessories' },
+                          { label: 'services', value: 'services' }
+                        ],
+                        hint: 'MUST match the category selection above.'
+                      },
+                      { 
+                        label: 'Price', 
+                        name: 'price', 
+                        widget: 'string', 
+                        required: true,
+                        hint: 'e.g. From SAR 1,699' 
+                      },
+                      { 
+                        label: 'Market Price (Optional)', 
+                        name: 'originalPrice', 
+                        widget: 'string', 
+                        required: false,
+                        hint: 'e.g. Market SAR 1,899+' 
+                      },
+                      { 
+                        label: 'Condition', 
+                        name: 'condition', 
+                        widget: 'select',
+                        required: true,
+                        options: ['New', 'Refurbished', 'Open Box', 'Pre-owned', 'Budget']
+                      },
+                      { label: 'Product Image', name: 'image', widget: 'image', required: true },
+                      { label: 'Quick Summary', name: 'summary', widget: 'text', required: true },
+                      { label: 'Bullet Points (Details)', name: 'details', widget: 'list', required: true, min: 1 },
+                      { 
+                        label: 'Source Name (for credit)', 
+                        name: 'sourceName', 
+                        widget: 'string', 
+                        default: 'Unsplash',
+                        required: true 
+                      },
+                      { 
+                        label: 'Source URL (for credit)', 
+                        name: 'sourceUrl', 
+                        widget: 'string', 
+                        default: 'https://unsplash.com',
+                        required: true,
+                        pattern: ['^https?://.*', 'Must be a valid URL starting with http:// or https://']
+                      }
                     ]
                   }
                 ]

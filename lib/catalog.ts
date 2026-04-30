@@ -1,13 +1,24 @@
-import catalogData from '@/data/products.json';
-import type { Catalog, Category, Product } from '@/types/catalog';
+import catalogConfig from '@/data/catalog.json';
+import productsData from '@/data/products.json';
+import { CatalogSchema } from './schemas';
+import type { Category, Product } from '@/types/catalog';
 
-export const catalog = catalogData as Catalog;
+const rawCatalog = {
+  ...catalogConfig,
+  ...productsData
+};
 
-export const categories: Category[] = catalog.categories;
+const result = CatalogSchema.safeParse(rawCatalog);
 
-export const featuredProducts: Product[] = catalog.featuredProducts;
+if (!result.success) {
+  console.error('❌ Data Validation Failed:', result.error.format());
+}
 
-export const brandOffers = catalog.brandOffers;
+export const catalog = result.success ? result.data : (rawCatalog as any);
+
+export const categories: Category[] = catalog.categories || [];
+export const featuredProducts: Product[] = catalog.featuredProducts || [];
+export const brandOffers = catalog.brandOffers || [];
 
 export function getCategoryBySlug(slug: string): Category | undefined {
   return categories.find((category) => category.slug === slug);
